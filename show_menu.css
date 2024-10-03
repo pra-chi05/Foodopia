@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  rgba(253, 227, 214, 0.829);
+}
+.back{
+    padding-top: 20px;
+    padding-right: 20px;
+    
+    text-align: right;
+}
+.back a{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(228, 117, 66, 0.829);
+    color: brown;
+
+}
+.back a:hover{
+    background-color:rgba(253, 80, 0, 0.829) ;
+    cursor: pointer;
+}
+
+
+.menu-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin: 20px 0;
+}
+
+.category h2 {
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.dish {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.dish:last-child {
+    border-bottom: none;
+}
+
+.dish img {
+    width: 100px; /* Adjust image size */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.dish-info {
+    flex: 1; /* Allow it to grow */
+}
+
+.dish-info h3 {
+    margin: 0 0 5px;
+    color:  rgba(209, 91, 36, 0.829);
+}
+
+.dish-info p {
+    margin: 5px 0;
+    color:rgba(209, 91, 36, 0.829);
+}
+
+.price {
+    font-weight: bold;
+    color: #007BFF; /* Change to your preferred color */
+    font-size: 1.1em;
+}
+

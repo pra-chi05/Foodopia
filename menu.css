@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis',sans-serif;
+    
+}
+
+.hero{
+    width: 95%;
+    margin: auto;
+}
+img{
+    height: 100px;
+    width: 200px;
+}
+.navbar{
+    margin: 10px auto;
+    display:flex;
+    align-items: center;
+}
+ul{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(170, 97, 54);
+    padding: 0 10px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: rgb(170, 97, 54);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    transition: 0.5s;
+
+
+}
+ul li a:hover::after{
+    width: 100px;
+}
+.icon{
+    height: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    
+
+}
+.icon img{
+    height: 25px;
+    width: 25px;
+    padding-right: 25px;
+}
+.icon a img{
+    height: 25px;
+    width: 25px;
+    padding-right: 25px;
+}
+.banner{
+    display: flex;
+    margin-top: 10px;
+}
+.left,.right{
+    flex-basis: 50%;
+
+}
+.right img{
+    width: 700px;
+    height: 500px;
+}
+.location{
+    width:37%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 0.5px solid rgb(177, 139, 117);
+    margin-bottom: 5px;
+   
+
+}
+.location img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.location h{
+    font-size: 15px;
+    color:rgb(146, 82, 45) ;
+}
+
+.time{
+    width:37%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 0.5px solid rgb(177, 139, 117);
+    margin: 0 0 30px;
+}
+.time img{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.time h{
+    font-size: 15px;
+    color:rgb(146, 82, 45) ;
+    margin-left: 2px;
+}
+
+.content h1{
+    font-size: 60px;
+    color:rgb(216, 148, 108) ;
+}
+.content h1 span{
+    color:rgb(187, 127, 95)  ;
+}
+.content h2{
+    color: rgb(216, 148, 108);
+    margin-left: 300px;
+
+}
+.content h3{
+    color:rgb(202, 169, 147);
+    padding-top: 30px;
+}
+
+.butn{
+    padding:70px 10px 100px 130px;
+}
+
+.butn a{
+    padding: 40px 70px 40px 70px;
+    border-radius: 5%;
+    background-color: rgba(228, 117, 66, 0.829);
+    font-size: 25px;
+    color: brown;
+    text-decoration: none;
+    border: 3px solid;
+    border-color:  brown;
+}
+.butn a:hover{
+    background-color:rgba(253, 80, 0, 0.829) ;
+    cursor: pointer;
+
+}
+.head{
+    text-align: center;
+    padding: 30px;
+    
+}
+.head h{
+    font-size: 40px;
+    font-weight: bolder;
+    color:rgb(170, 97, 54) ;
+    border-bottom: 0.5px solid rgb(117, 67, 37);
+    
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width:100%;
+    height: 500px;
+    object-fit: fill;
+    border-radius: 5%;
+}
+
+
+
+.active {
+    display: block;
+}
+
+
+
+.grid-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.grid {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.grid-item {
+    min-width: 200px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+.grid-item h1{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(163, 80, 31);
+}
+.grid-item p{
+    color: rgb(216, 148, 108);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0);
+    color: brown;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+    z-index: 10;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+footer{
+    background-color:rgb(243, 190, 159) ;
+    margin-top:30px ;
+}
+footer p{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: brown;
+}
+footer li{
+    display: block;
+    text-align: center;
+    
+}
+footer ul li img{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+footer ul li h{
+    font-size: 22px;
+    padding-left: 10px;
+    color: brown;
+}
